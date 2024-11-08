@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Book Reader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h2>Table of Contents</h2>
+      <ul id="toc">
+        <li><a href="#" onclick="loadChapter('chapter1')">Chapter 1</a></li>
+        <li><a href="#" onclick="loadChapter('chapter2')">Chapter 2</a></li>
+        <!-- Add more chapters as needed -->
+      </ul>
+      <button id="theme-toggle">Toggle Theme</button>
+    </aside>
+
+    <main id="content">
+      <section id="reader">
+        <h1>Welcome to Your Digital Book Reader</h1>
+        <p>Select a chapter to begin reading.</p>
+      </section>
+    </main>
+
+    <footer>
+      <button onclick="decreaseFontSize()">A-</button>
+      <button onclick="increaseFontSize()">A+</button>
+      <progress id="progress" max="100" value="0"></progress>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
